@@ -55,9 +55,10 @@ function fetchBookmarks() {
     bookmarkResults.innerHTML = '';
     // looping through to get itterations
     bookmarks.forEach(bookmark => {
+        var id = bookmark.id;
         var name = bookmark.name;
         var url = bookmark.url;
-        var id = bookmark.id;
+        
         var toDate = new Date(id).toISOString().split('T')[0];
 
         bookmarkResults.innerHTML += `  <div class="resultbkground">
