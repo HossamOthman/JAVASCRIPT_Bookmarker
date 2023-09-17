@@ -75,9 +75,9 @@ function fetchBookmarks() {
 function deleteBookmark(id) {
    // get bookmarks from local storage
    var existBookmarks = JSON.parse(localStorage.getItem('bookmarkApp.bookmarks'));
-   existBookmarks.forEach(bookmark => {
+   existBookmarks.forEach((bookmark, index) => {
     if (bookmark.id === id) {
-        existBookmarks.splice(bookmark, 1)
+        existBookmarks.splice(index, 1)
     }
     // re-set it back to local storage again... after deletion
     localStorage.setItem('bookmarkApp.bookmarks', JSON.stringify(existBookmarks));
