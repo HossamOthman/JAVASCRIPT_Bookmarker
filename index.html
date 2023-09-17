@@ -7,7 +7,7 @@
     <script src="main.js" defer></script>
     <title>Bookmarker App</title>
 </head>
-<body>
+<body onload="fetchBookmarks()">
     <div class="container">
         <div class="header">
             <nav></nav>
@@ -27,14 +27,15 @@
                 <button type="submit" class="btn">Submit</button>
             </form>
         </div>
-        <div class="row-bookmarks">
-            <div id="bookmarksResults"></div>
+        <div id="bookmarksResults" class="bookmarksResults">
+
         </div>
+        
 
         
     </div>
     <footer class="footer">
-        <p>&copy; 2023 Bookmarker, Inc.</p>
+        <p>&copy; 2023 Bookmarker, Hossam Othman</p>
     </footer>
 </body>
 </html>

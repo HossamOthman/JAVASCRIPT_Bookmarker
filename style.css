@@ -4,10 +4,10 @@ body{
     list-style: none;
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-content: center;
     align-items: center;
     background-color: #ccc;
@@ -17,13 +17,11 @@ body{
 .container{
     margin: 0 auto;
     width: 65%;
-    height: 94vh;
     background-color: #f3f3f3;
 
 }
 .header{
-    margin: 10px 0;
-    padding: 10px;
+    padding: 5px 15px;
     border-bottom: 1px solid #ccc;
     color: #777;
 }
@@ -34,7 +32,7 @@ body{
     padding: 10px 10%;
     border-radius: 5px;
 }
-.interface h2 {
+.interface > h2 {
     text-align: center;
 }
 .interface form, .interface .form-group {
@@ -52,18 +50,63 @@ body{
     border: none;
     border-radius: 3px;
 }
-.interface form .btn {
+.interface > form > .btn {
     padding: 10px 25px;
     background-color: #07d;
     border: none;
     border-radius: 3px;
     color: whitesmoke;
-    font-weight: 500;
+    font-weight: 600;
     font-size: large;
     cursor: pointer;
  }
 
+ .bookmarksResults{
+    overflow: scroll;
+    height: 550px;
+ }
 
-.footer{
-    margin-top: auto;
+.resultbkground{
+    background-color: #ccc;
+    padding: 3px 25px;
+    margin: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.resultbkground > h3 > span {
+    margin-left: 15px;
+    color:#777;
+    font-size: medium;
+    font-weight: 300;
+}
+
+.resultbkground > div > .btn {
+    background-color: #07d;
+    color: whitesmoke;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.resultbkground > div > .visit {
+    background-color: #07d;
+    font-weight: 600;
+    padding: 7px 25px;
+}
+.resultbkground > div > .delete {
+    background-color: #d30;
+    padding: 7px 10px;
+}
+
+
+
+
+footer{
+    margin: auto;
+   
+    
+    
 }
